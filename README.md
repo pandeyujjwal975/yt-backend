@@ -1,62 +1,61 @@
-Bilkul Ujjwal, yah raha ek simple aur clean README.md ka code format:
-
 # yt-backend
 
 FastAPI backend to download YouTube videos using yt-dlp.
 
+---
+
 ## Features
 
-- Download YouTube videos (supports Shorts)
-- POST API endpoint
-- Easy Render deployment
+- Download YouTube videos (including Shorts)
+- Simple POST API
+- Easy deployment on Render
 
-## API Endpoint
+---
 
-**POST** `/download`
+## API Usage
 
-**Request:**
-```json
-{
-  "url": "https://youtube.com/shorts/your-video-url"
-}
+### Endpoint
 
-Response:
+POST /download
 
-{
-  "message": "Download completed!"
-}
+### Request Body
 
-Setup Instructions
+{ "url": "https://youtube.com/shorts/your-video-url" }
 
-1. Install Dependencies
+### Response
+
+{ "message": "Download completed!" }
+
+---
+
+## Setup Instructions
+
+### 1. Install Dependencies
 
 pip install -r requirements.txt
 
-2. Run Locally
+### 2. Run Locally
 
 uvicorn main:app --reload
 
-Deploy on Render
+---
 
-1. Push to GitHub
+## Deploy on Render
 
+1. Push this project to GitHub  
+2. Visit: https://render.com  
+3. Create a new Web Service  
+4. Connect your GitHub repo  
+5. Render will auto-detect `render.yaml` and deploy your app
 
-2. Go to https://render.com
+---
 
-
-3. Create new Web Service
-
-
-4. Connect your repo
-
-
-5. Render detects render.yaml and auto deploys
-
-
-
-License
+## License
 
 MIT License
 
-Author
+---
+
+## Author
+
 Ujjwal Pandey
